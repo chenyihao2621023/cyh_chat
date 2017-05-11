@@ -1,0 +1,30 @@
+.user-panel {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    & > div:nth-child(1000n+1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .online {
+        background-color: lawngreen;
+    }
+    .offline {
+        background-color: orangered;
+    }
+
+    & > div:nth-child(1000n+2) {
+        cursor: pointer;
+    }
+
+    & > img {
+        cursor: pointer;
+    }
+}
