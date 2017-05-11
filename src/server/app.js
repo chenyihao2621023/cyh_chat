@@ -1,6 +1,6 @@
 const env = process.env.NODE_ENV;
 
-console.log('env',env);
+
 const config = require('../../config/config');
 const mongoose = require('mongoose');
 const promise = require('bluebird');
@@ -121,7 +121,7 @@ app.use(function* (next) {
 // socket handle
 io.on('connection', socket => {
     console.log('new connection');
-
+    console.log('env',env);
     socket.on('message', (data, cb) => {
         router.handle(io, socket, data, cb);
     });
