@@ -23,7 +23,7 @@ const router = require('./route/index');
 mongoose.Promise = global.Promise;
 
 // connect database
-mongoose.connect(env !== 'test' ? config.database : config.testDatabase, err => {
+mongoose.connect(env !== 'production' ? config.database : config.testDatabase, err => {
     if (err) {
         console.log('connect database error -->', err);
         process.exit(1);

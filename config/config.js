@@ -2,7 +2,7 @@ module.exports = {
     port: 9200,     // server port
 
     database: 'mongodb://127.0.0.1:27017/test',
-    testDatabase: 'test_database_name',
+    testDatabase: 'mongodb://127.0.0.1:27017/test',
 
     jwtSecret: 'jwt_token_secret',
     accessKey: 'qiniu_access_key',
