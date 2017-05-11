@@ -1,5 +1,6 @@
 const env = process.env.NODE_ENV;
 
+console.log('env',env);
 const config = require('../../config/config');
 const mongoose = require('mongoose');
 const promise = require('bluebird');
