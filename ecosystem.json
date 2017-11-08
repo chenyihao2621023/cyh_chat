@@ -1,7 +1,7 @@
 {
   "apps": [{
     "name": "cyh_chat",
-    "script": "bin/develop.js",
+    "script": "bin1111/develop2222.js",
     "env": {
       "COMMON_VARIABLE":"true"
     },
