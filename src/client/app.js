@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 
 import './app.scss';
 
-import user from './action/user';
-import ui from './action/ui';
-import socket from './socket';
+// import user from './action/user';
+// import ui from './action/ui';
+// import socket from './socket';
 
 import Notification from './commonComponent/notification';
 
