@@ -2,19 +2,21 @@
   "apps": [
     {
       "name": "cyh_chat",
-      "script": "bin/develop.js",
+      "script": "/bin/develop.js",
       "env": {
-        "COMMON_VARIABLE": "true",
+        "COMMON_VARIABLE": "true"
       },
       "env_production": {
         "NODE_ENV": "production"
       }
-    },
+    }
   ],
   "deploy": {
     "production": {
       "user": "cyh_manager",
-      "host": ["47.93.30.123"],
+      "host": [
+        "47.93.30.123"
+      ],
       "port": "39999",
       "ref": "origin/master",
       "repo": "https://github.com/chenyihao2621023/cyh_chat.git",
