@@ -1,7 +1,7 @@
 {
   "apps": [{
     "name": "cyh_chat333",
-    "script": "bin1111/develop2222.js",
+    "script": "bin/develop.js",
     "env": {
       "COMMON_VARIABLE":"true"
     },
@@ -18,7 +18,7 @@
       "repo": "https://github.com/chenyihao2621023/cyh_chat.git",
       "path": "/www/cyh_chat/production",
       "ssh_options": "StrictHostKeyChecking=no",
-      "post-deploy": "cnpm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
       "env": {
         "NODE_ENV": "production"
       }
