@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import './app.scss';
-
+// 1
 import user from './action/user';
 import ui from './action/ui';
 import socket from './socket';
